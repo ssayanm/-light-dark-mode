@@ -5,6 +5,7 @@ const image1 = document.getElementById("image1");
 const image2 = document.getElementById("image2");
 const image3 = document.getElementById("image3");
 const textBox = document.getElementById("text-box");
+const body = document.getElementById("mybody");
 
 // Dark or Light Images
 function imageMode(color) {
@@ -15,6 +16,7 @@ function imageMode(color) {
 
 // Dark Mode Styles
 function darkMode() {
+  // body.style.backgroundColor = "rgba(0,0,0,0.5)";
   nav.style.backgroundColor = "rgba(0,0,0,0.5)";
   textBox.style.backgroundColor = "rgba(255,255,255,0.5)";
   toggleIcon.children[0].textContent = "Dark Mode";
