@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Comfortaa|Kaushan+Script|Oswald&display=swap");
-
-// $dark-theme: false !default;
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans&display=swap");
 
 $dark-primary-color: rgb(150, 65, 255);
 $dark-primary-variant: #6c63ff;
@@ -23,3 +21,6 @@ $large: 4rem;
 $medium: 2.75rem;
 $small: 2rem;
 $smallest: 1.3rem;
+
+$font-stack: "Nunito", sans-serif;
+$font-stack-alt: "Open Sans", sans-serif;
