@@ -16,7 +16,6 @@ function imageMode(color) {
 
 // Dark Mode Styles
 function darkMode() {
-  // body.style.backgroundColor = "rgba(0,0,0,0.5)";
   nav.style.backgroundColor = "rgba(0,0,0,0.5)";
   textBox.style.backgroundColor = "rgba(255,255,255,0.5)";
   toggleIcon.children[0].textContent = "Dark Mode";
@@ -37,9 +36,6 @@ function lightMode() {
 // Switch Theme Dynamically
 function switchTheme(event) {
   if (event.target.checked) {
-    // document.body.classList.toggle("darktheme");
-    // document.documentElement.setAttribute("data-theme", "dark");
-
     document.body.classList.toggle("darktheme");
 
     localStorage.setItem("theme", "dark");
@@ -56,15 +52,13 @@ function switchTheme(event) {
 toggleSwitch.addEventListener("change", switchTheme);
 
 // Check Local Storage For Theme
-const currentTheme = localStorage.getItem("theme");
-if (currentTheme) {
-  document.documentElement.setAttribute("data-theme", currentTheme);
+// const currentTheme = localStorage.getItem("theme");
+// if (currentTheme) {
+//   document.body.classList("darktheme");
 
-  if (currentTheme === "dark") {
-    toggleSwitch.checked = true;
-    darkMode();
-  }
-}
+//   toggleSwitch.checked = false;
+//   darkMode();
+// }
 
 // const sunMoonContainer = document.querySelector(".sun-moon-container");
 
